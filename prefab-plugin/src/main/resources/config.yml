@@ -1,0 +1,47 @@
+# PaperPrefab - configurazione
+
+costruzione:
+  # Blocchi piazzati per tick (20 tick = 1 secondo). 0 = costruzione istantanea.
+  blocchi-per-tick: 0
+  # Materiale usato per riempire i buchi sotto la struttura (terreno in pendenza).
+  materiale-fondamenta: COBBLESTONE
+  # Quanti blocchi al massimo si riempiono verso il basso. Oltre questo valore la costruzione viene rifiutata.
+  profondita-max-fondamenta: 6
+  # Se true, terra/pietra/sabbia/ghiaia/foglie dentro l'area vengono rimosse automaticamente.
+  # Se false, l'area deve essere libera (solo aria, erba, fiori, neve...).
+  rimuovi-terreno-naturale: true
+  # Distanza massima (in blocchi) a cui si può mirare il terreno.
+  distanza-mira: 12
+
+anteprima:
+  # Dopo quanti secondi l'anteprima sparisce se non viene confermata.
+  secondi: 30
+  # Oltre questo numero di blocchi l'anteprima mostra solo il "guscio" esterno.
+  max-blocchi: 1500
+
+annulla:
+  # Per quanti minuti si può annullare l'ultima costruzione con /prefab annulla.
+  minuti: 10
+
+ricette:
+  # Ricette di crafting per le strutture incluse.
+  attive: true
+
+# Messaggi (formato MiniMessage: https://docs.advntr.dev/minimessage/format.html)
+messaggi:
+  prefisso: "<dark_gray>[<gold>Prefab</gold>]</dark_gray> "
+  anteprima: "<green>Anteprima di <white>{nome}</white>. <gray>Clic destro di nuovo sullo <white>stesso punto</white> per costruire, <white>Shift + clic destro</white> per annullare."
+  anteprima-bloccata: "<red>Qui non si può costruire: <white>{motivo}</white>. <gray>Mira un altro punto."
+  anteprima-scaduta: "<gray>Anteprima scaduta."
+  anteprima-annullata: "<gray>Anteprima annullata."
+  nessun-terreno: "<red>Guarda il terreno dove vuoi costruire (massimo {distanza} blocchi)."
+  costruita: "<green>{nome} costruita! <gray>Usa <white>/prefab annulla</white> entro {minuti} minuti se hai sbagliato."
+  zona-protetta: "<red>Non hai il permesso di costruire in questa zona."
+  annullata: "<green>Ultima costruzione annullata. <gray>L'oggetto ti è stato restituito."
+  niente-da-annullare: "<red>Non c'è nessuna costruzione da annullare."
+  niente-permesso: "<red>Non hai il permesso."
+  sconosciuto: "<red>Prefab sconosciuto: <white>{id}</white>"
+  motivo-ostacolo: "c'è {blocco} in mezzo"
+  motivo-giocatore: "c'è un giocatore nell'area"
+  motivo-altezza: "troppo in alto o troppo in basso"
+  motivo-fondamenta: "il terreno sotto è troppo irregolare"

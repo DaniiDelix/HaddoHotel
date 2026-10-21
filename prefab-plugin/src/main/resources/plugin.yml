@@ -1,0 +1,20 @@
+name: PaperPrefab
+version: ${project.version}
+main: ch.haddo.prefab.PrefabPlugin
+api-version: '26.2'
+description: Strutture pronte da piazzare con un clic, ispirato alla mod Prefab.
+author: Daniele D'Elia
+
+commands:
+  prefab:
+    description: Comandi di PaperPrefab
+    usage: /prefab
+    aliases: [pf]
+
+permissions:
+  prefab.use:
+    description: Usare gli oggetti prefab e annullare le proprie costruzioni
+    default: true
+  prefab.admin:
+    description: Dare oggetti, salvare/eliminare strutture, ricaricare
+    default: op
