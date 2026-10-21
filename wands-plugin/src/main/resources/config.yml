@@ -1,0 +1,66 @@
+# PaperWands - configurazione
+
+# Tipi di bacchetta.
+#  max-blocchi: quanti blocchi piazza al massimo con un clic
+#  durata: quanti blocchi può piazzare in totale prima di rompersi (0 = infinita)
+#  modello: aspetto dell'oggetto (qualsiasi oggetto vanilla, es. minecraft:blaze_rod)
+#  consuma: se false non usa blocchi dall'inventario (bacchetta creativa)
+bacchette:
+  pietra:
+    nome: "<gray>Bacchetta di pietra"
+    max-blocchi: 9
+    durata: 131
+    modello: minecraft:stick
+    consuma: true
+  ferro:
+    nome: "<white>Bacchetta di ferro"
+    max-blocchi: 25
+    durata: 250
+    modello: minecraft:breeze_rod
+    consuma: true
+  diamante:
+    nome: "<aqua>Bacchetta di diamante"
+    max-blocchi: 64
+    durata: 1561
+    modello: minecraft:blaze_rod
+    consuma: true
+  netherite:
+    nome: "<dark_purple>Bacchetta di netherite"
+    max-blocchi: 128
+    durata: 2031
+    modello: minecraft:end_rod
+    consuma: true
+  creativa:
+    nome: "<light_purple>Bacchetta creativa"
+    max-blocchi: 256
+    durata: 0
+    modello: minecraft:debug_stick
+    consuma: false
+
+# Ricette di crafting (bacchetta creativa esclusa).
+ricette:
+  attive: true
+
+# Distanza massima dal blocco cliccato.
+distanza: 6
+
+# Anteprima con particelle dei blocchi che verranno piazzati.
+anteprima:
+  attiva: true
+  colore: "#7CFC00"
+
+annulla:
+  # Per quanti minuti si può annullare l'ultima piazzata con /bacchetta annulla.
+  minuti: 5
+
+messaggi:
+  prefisso: "<dark_gray>[<aqua>Bacchetta</aqua>]</dark_gray> "
+  modalita: "<gray>Modalità: <white>{modalita}"
+  non-copiabile: "<red>Questo blocco non si può copiare con la bacchetta."
+  niente-spazio: "<red>Non c'è spazio libero da riempire."
+  niente-blocchi: "<red>Ti servono blocchi di <white>{blocco}</white> nell'inventario."
+  piazzati: "<green>Piazzati <white>{n}</white> blocchi di <white>{blocco}</white>."
+  annullato: "<green>Annullati <white>{n}</white> blocchi. <gray>I blocchi ti sono stati restituiti."
+  niente-da-annullare: "<red>Non c'è nessuna piazzata da annullare."
+  rotta: "<red>La tua bacchetta si è rotta!"
+  niente-permesso: "<red>Non hai il permesso."

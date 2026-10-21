@@ -1,0 +1,20 @@
+name: PaperWands
+version: ${project.version}
+main: ch.haddo.wands.WandsPlugin
+api-version: '26.2'
+description: Bacchette da costruzione che piazzano file e superfici di blocchi, ispirato alla mod Building Wands.
+author: Daniele D'Elia
+
+commands:
+  bacchetta:
+    description: Comandi di PaperWands
+    usage: /bacchetta
+    aliases: [wand]
+
+permissions:
+  wands.use:
+    description: Usare le bacchette e annullare le proprie piazzate
+    default: true
+  wands.admin:
+    description: Dare bacchette (anche quella creativa) e ricaricare
+    default: op
