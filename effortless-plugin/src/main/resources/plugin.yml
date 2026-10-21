@@ -1,0 +1,20 @@
+name: PaperEffortless
+version: ${project.version}
+main: ch.haddo.effortless.EffortlessPlugin
+api-version: '26.2'
+description: Costruzione veloce con forme (linee, muri, cubi, cerchi, sfere), specchio, simmetria radiale e ripetizione. Ispirato alla mod Effortless Building.
+author: Daniele D'Elia
+
+commands:
+  eb:
+    description: Menu e comandi di PaperEffortless
+    usage: /eb
+    aliases: [costruisci]
+
+permissions:
+  effortless.use:
+    description: Usare forme, modificatori, annulla e ripeti
+    default: true
+  effortless.admin:
+    description: Ricaricare la configurazione
+    default: op

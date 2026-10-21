@@ -1,0 +1,31 @@
+# PaperEffortless - configurazione
+
+# Massimo di blocchi piazzati con una sola azione (forma + modificatori).
+max-blocchi: 4096
+# Distanza massima (in blocchi) a cui si può mirare il secondo e il terzo punto.
+distanza: 64
+# Raggio massimo per cerchi, cilindri e sfere.
+raggio-max: 48
+# Quante azioni si possono annullare.
+cronologia: 20
+
+anteprima:
+  # Blocchi fantasma mostrati al massimo. Oltre questo numero l'anteprima è parziale.
+  max-blocchi: 1500
+
+messaggi:
+  prefisso: "<dark_gray>[<green>Costruzione</green>]</dark_gray> "
+  punto: "<gray>Punto <white>{n}/{tot}</white> impostato. <white>Clic destro</white> per il prossimo, <white>clic sinistro</white> per annullare."
+  punto-iniziale: "<red>Clicca su un blocco per iniziare la forma."
+  punto-non-valido: "<red>Mira un punto valido (entro {distanza} blocchi)."
+  forma-annullata: "<gray>Forma annullata."
+  troppi-blocchi: "<red>Troppi blocchi ({n}). Il massimo è {max}."
+  piazzati: "<green>Piazzati <white>{n}</white> blocchi."
+  niente-blocchi: "<red>Non hai abbastanza blocchi di <white>{blocco}</white>: piazzati {n}."
+  niente-spazio: "<red>Non c'è spazio libero per questa forma."
+  annullato: "<green>Azione annullata ({n} blocchi)."
+  ripetuto: "<green>Azione ripetuta ({n} blocchi)."
+  niente-da-annullare: "<red>Niente da annullare."
+  niente-da-ripetere: "<red>Niente da ripetere."
+  centro: "<green>Centro di specchio e simmetria impostato qui: <white>{x} {y} {z}"
+  niente-permesso: "<red>Non hai il permesso."
